@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/search_query_hint"
+        android:iconifiedByDefault="false"/>
+
+    <Button
+        android:id="@+id/general_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general_search_button"
+        android:layout_toRightOf="@+id/search_view" />
+
+
+    <ListView
+        android:id="@+id/listview_search"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/search_view"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_error_message_airports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_view"
+        android:padding="16dp"
+        android:text="@string/tv_flights_error_message"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator_airports"
+        android:layout_height="42dp"
+        android:layout_width="42dp"
+        android:layout_below="@+id/search_view"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

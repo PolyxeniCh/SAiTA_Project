@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TableRow>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewOriginCity"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="20sp"
+                android:textColor="#3360e5"/>
+
+            <TextView
+                android:text="@string/to_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewToLabel"
+                android:layout_toRightOf="@+id/textViewOriginCity"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp"
+                android:textColor="#3360e5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDestinationCity"
+                android:layout_toRightOf="@+id/textViewToLabel"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp"
+                android:textColor="#3360e5"/>
+
+            <TextView
+                android:text="@string/airline_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewAirlineLabel"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textViewOriginCity"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewAirline"
+                android:layout_alignBaseline="@+id/textViewAirlineLabel"
+                android:layout_toRightOf="@+id/textViewAirlineLabel"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewFlightCode"
+                android:layout_below="@+id/textViewAirlineLabel"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewSeatType"
+                android:layout_alignBaseline="@+id/textViewFlightCode"
+                android:layout_toRightOf="@+id/textViewFlightCode"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:text="@string/remaining_seats_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewRemainingSeatsLabel"
+                android:layout_alignBaseline="@+id/textViewFlightCode"
+                android:layout_toRightOf="@+id/textViewSeatType"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewRemainingSeats"
+                android:layout_alignBaseline="@+id/textViewFlightCode"
+                android:layout_toRightOf="@+id/textViewRemainingSeatsLabel"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:text="@string/departure_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDepartureLabel"
+                android:layout_below="@+id/textViewFlightCode"
+                android:textSize="20sp"
+                android:textColor="#14265c"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDepartureDate"
+                android:layout_below="@+id/textViewDepartureLabel"
+                android:layout_marginTop="8dp"
+                android:textColor="#3360e5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDepartureTime"
+                android:layout_below="@+id/textViewDepartureDate"
+                android:textColor="#3360e5"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:text="@string/arrival_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewArrivalLabel"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/textViewDepartureLabel"
+                android:layout_toRightOf="@+id/textViewDestinationCity"
+                android:textColor="#14265c"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewArrivalDate"
+                android:textColor="#3360e5"
+                android:layout_above="@+id/textViewDepartureTime"
+                android:layout_alignEnd="@+id/textViewArrivalLabel"
+                android:layout_alignRight="@+id/textViewArrivalLabel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewArrivalTime"
+                android:textColor="#3360e5"
+                android:layout_below="@+id/textViewArrivalDate"
+                android:layout_alignEnd="@+id/textViewArrivalLabel"
+                android:layout_alignRight="@+id/textViewArrivalLabel"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

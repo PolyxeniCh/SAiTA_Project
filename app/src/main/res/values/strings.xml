@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">SAiTA_Project</string>
+
+    <!-- activity_main.xml -->
+    <string name="tv_from_airport_text">From</string>
+    <string name="tv_to_airport_text">To</string>
+    <string name="tv_departure_date_text">Departure Date</string>
+    <string name="tv_return_date_text">Return Date</string>
+    <string name="cb_direct_flight">Only direct flights</string>
+    <string name="tv_passengers_text">Adults: 1</string>
+    <string name="tv_default_travel_class_text">Economy</string>
+    <string name="search_button_text">Search flights</string>
+    <string name="warning_invalid_origin">Select your origin airport</string>
+    <string name="warning_invalid_destination">Select your destination airport</string>
+    <string name="warning_invalid_departure_date">Select the date of your departure</string>
+    <string name="warning_no_return_date">Select the date of your return</string>
+    <string name="warning_invalid_return_date">Return date should be after departure date</string>
+
+    <!-- activity_flights.xml -->
+    <string name="tv_flights_error_message">An error has occurred or there were no results found.</string>
+
+    <!-- FlightsAdapter.java -->
+
+    <!-- activity_flight_details.xml -->
+    <string name="to_label"> - </string>
+    <string name="airline_label">AIRLINE: </string>
+    <string name="remaining_seats_label">Remaining seats: </string>
+    <string name="departure_label">Departure</string>
+    <string name="arrival_label">Arrival</string>
+    <string name="flight_price_label">Flight Price: </string>
+    <string name="book_button_label">Book Now</string>
+
+    <!-- activity_passengers.xml -->
+    <string name="adults_passengers_text">Adults</string>
+    <string name="children_passengers_text">Children</string>
+    <string name="infants_passengers_text">Infants</string>
+    <string name="save_button_text">Save</string>
+    <string name="warning_no_passengers">There must be at least one adult or child passenger</string>
+    <string name="warning_invalid_infants">The infants should be less than or equal to the adults</string>
+
+    <!-- activity_search.xml -->
+    <string name="search_query_hint">Search Airport</string>
+    <string name="general_search_button">Search</string>
+    <string name="warning_no_airport_input">Provide search paramaters term and/or country</string>
+    
+    <!-- activity_travel_class.xml -->
+    <string name="economy_travel_class_text">Economy</string>
+    <string name="premium_economy_travel_class_text">Premium_Economy</string>
+    <string name="business_travel_class_text">Business</string>
+    <string name="first_travel_class_text">First</string>
+
+    <!-- general_preferences.xml -->
+    <string name="general_preferences_currency_title">Currency</string>
+    <string name="general_preferences_currency_key" translatable="false">preferred_currency</string>
+
+    <string name="preferred_currency_eur" translatable="false">EUR</string>
+    <string name="preferred_currency_usd" translatable="false">USD</string>
+
+    <string-array name="preferred_currency_entries">
+        <item>Euro (EUR)</item>
+        <item>US Dollar (USD)</item>
+    </string-array>
+
+    <string-array name="preferred_currency_entryValues">
+        <item>EUR</item>
+        <item>USD</item>
+    </string-array>
+
+    <!-- main.xml -->
+    <string name="action_settings">Settings</string>
+
+    <!-- main_settings.xml -->
+    <string name="action_currency">Currency</string>
+
+</resources>
